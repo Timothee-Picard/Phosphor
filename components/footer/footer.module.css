@@ -1,0 +1,102 @@
+.logo {
+    width: 50vw;
+    max-width: 1000px;
+    height: auto;
+    aspect-ratio: 1692/834;
+}
+
+.sectionLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    background: #D6FFA8;
+}
+
+.sectionInfos {
+    display: flex;
+    padding: 0 3.75rem;
+    justify-content: space-between;
+}
+
+.containerInfo {
+    max-width: 10rem;
+}
+
+.containerInfo h3 {
+    font-family: 'Sora', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.containerInfo p {
+    font-family: 'Sora', sans-serif;
+    font-size: 0.625rem;
+    font-weight: 300;
+    text-decoration-line: underline;
+}
+
+.infosLink {
+    display: flex;
+    gap: 1.25rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.infosLink a {
+    font-family: 'Sora' , sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
+
+.infosContact {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionRs {
+    position: relative;
+    padding: 3.5rem ;
+    margin-top: 5rem;
+    background: #BFF483;
+    display: flex;
+    justify-content: center;
+}
+
+.containerRs{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.rs {
+    display: flex;
+    gap: 1.25rem;
+
+}
+
+.legal {
+    display: flex;
+    gap: 2.25rem;
+    font-family: 'Sora' , sans-serif;
+    font-size: 0.625rem;
+    font-weight: 300;
+}
+
+.copyrigth {
+    position: absolute;
+    bottom: 3.75rem;
+    left: 3.75rem;
+    font-family: 'Sora' , sans-serif;
+    font-size: 0.5rem;
+    font-weight: 300;
+}

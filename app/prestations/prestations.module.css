@@ -1,0 +1,176 @@
+
+.hero {
+    background-color: #fff;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10rem;
+}
+
+.hero h1 {
+    color: #102E00;
+    font-size: 3.4375rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.hero h1 span {
+    color: #84DD1F;
+    font-family: Caveat, sans-serif;
+    font-size: 5.4rem;
+    padding-right: 0.7rem;
+    text-transform: lowercase;
+}
+
+.sectionContent {
+    position: relative;
+    display: flex;
+    padding-bottom: 1rem;
+    background: linear-gradient(88deg, #171615 32.45%, #31221C 96.24%);
+}
+
+.sectionContent aside {
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+    width: 30rem;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sectionContent aside h2 {
+    text-align: right;
+    font-family: Sora, sans-serif;
+    font-size: 9.375rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px #FFFDCB;
+    color: transparent;
+    transform: translateX(calc(var(--percentage) * -1));
+}
+
+.progressBar {
+    position: relative;
+    top: 2rem;
+    right: 0;
+    height: calc(100% - 10rem); /* 10rem = 6rem (indicator height) + 2rem(margin bottom) + 2rem(margin padding bottom) */
+}
+
+.progressBarContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 5px;
+    border-radius: 1.25rem 1.25rem 0 0;
+    background: linear-gradient(88deg, #171615 32.45%, #31221C 96.24%);
+}
+
+.indicator {
+    width: 2px;
+    height: 6rem;
+    position: absolute;
+    top: var(--percentage);
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.70);
+}
+
+.sectionContent main {
+    flex: 1;
+    overflow: auto;
+    color: #fff;
+    padding-left: 4rem;
+    padding-right: 12rem;
+}
+
+.sectionContent main article h2 {
+    color: #E7E7E7;
+    font-family: Sora, sans-serif;
+    font-size: 3.4375rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 3rem 0;
+}
+
+.sectionContent main article > p {
+    color: #F7F7F7;
+    font-family: Sora, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.sectionContent main article .links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 3rem 0 5rem;
+}
+
+.sectionContent main article .links a {
+    position: relative;
+        border: none;
+        color: #FFF;
+        text-align: center;
+        font-family: Sora, sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+        padding: 0.5rem 2rem 0.5rem 1rem;
+        background-color: #d6ffa8;
+        background-size: 100%;
+        z-index: 10;
+        clip-path: polygon(.31% 9.836%,.31% 9.836%,.33% 8.507%,.389% 7.245%,.482% 6.069%,.608% 4.995%,.763% 4.04%,.943% 3.221%,1.146% 2.554%,1.368% 2.057%,1.606% 1.747%,1.858% 1.639%,98.452% 1.639%,98.452% 1.639%,98.703% 1.747%,98.941% 2.057%,99.163% 2.554%,99.366% 3.221%,99.547% 4.04%,99.701% 4.995%,99.827% 6.069%,99.921% 7.245%,99.98% 8.507%,100% 9.836%,100% 46.542%,100% 46.542%,99.995% 47.221%,99.979% 47.89%,99.953% 48.547%,99.917% 49.188%,99.872% 49.811%,99.817% 50.412%,99.753% 50.988%,99.679% 51.537%,99.598% 52.054%,99.508% 52.537%,90.339% 97.799%,90.339% 97.799%,90.25% 98.204%,90.156% 98.571%,90.058% 98.898%,89.956% 99.185%,89.85% 99.43%,89.741% 99.633%,89.63% 99.792%,89.516% 99.907%,89.4% 99.977%,89.283% 100%,1.858% 100%,1.858% 100%,1.606% 99.893%,1.368% 99.582%,1.146% 99.085%,.943% 98.418%,.763% 97.599%,.608% 96.644%,.482% 95.57%,.389% 94.394%,.33% 93.133%,.31% 91.803%,.31% 9.836%);
+}
+
+.sectionContent main article .links a::before {
+    background-color: #241a16;
+    content: "";
+    height: calc(100% - 2px);
+    left: 1px;
+    position: absolute;
+    top: 1px;
+    width: calc(100% - 2px);
+    z-index: -1;
+    clip-path: polygon(.31% 9.836%,.31% 9.836%,.33% 8.507%,.389% 7.245%,.482% 6.069%,.608% 4.995%,.763% 4.04%,.943% 3.221%,1.146% 2.554%,1.368% 2.057%,1.606% 1.747%,1.858% 1.639%,98.452% 1.639%,98.452% 1.639%,98.703% 1.747%,98.941% 2.057%,99.163% 2.554%,99.366% 3.221%,99.547% 4.04%,99.701% 4.995%,99.827% 6.069%,99.921% 7.245%,99.98% 8.507%,100% 9.836%,100% 46.542%,100% 46.542%,99.995% 47.221%,99.979% 47.89%,99.953% 48.547%,99.917% 49.188%,99.872% 49.811%,99.817% 50.412%,99.753% 50.988%,99.679% 51.537%,99.598% 52.054%,99.508% 52.537%,90.339% 97.799%,90.339% 97.799%,90.25% 98.204%,90.156% 98.571%,90.058% 98.898%,89.956% 99.185%,89.85% 99.43%,89.741% 99.633%,89.63% 99.792%,89.516% 99.907%,89.4% 99.977%,89.283% 100%,1.858% 100%,1.858% 100%,1.606% 99.893%,1.368% 99.582%,1.146% 99.085%,.943% 98.418%,.763% 97.599%,.608% 96.644%,.482% 95.57%,.389% 94.394%,.33% 93.133%,.31% 91.803%,.31% 9.836%);
+}
+
+.sectionContent main article .links a::after {
+    content: "";
+    position: absolute;
+    top: 0.5rem;
+    right: 0.6rem;
+    width: 12px;
+    height: 12px;
+    transform: rotate(-7deg);
+    background-image: url("/arrow.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sectionContent main .container h3 {
+    color: #E7E7E7;
+    font-family: Sora, sans-serif;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.sectionContent main .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid rgba(255, 255, 255, 0.70);;
+    padding: 3.2rem 1.5rem;
+}
+
+.sectionContent main .container p {
+    max-width: 21rem;
+    color: #C5C5C5;
+    font-family: Sora, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}

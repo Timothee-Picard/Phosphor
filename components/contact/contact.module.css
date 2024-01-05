@@ -1,0 +1,112 @@
+.sectionContact {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 12rem 3rem;
+    margin-top: -1rem;
+    background-color: white;
+}
+
+.sectionContact form {
+    padding: 0 5rem;
+    display: flex;
+    z-index: 1;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.sectionContact form .formGroup {
+    position: relative;
+}
+
+.sectionContact form .formGroup label {
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+    transition: 0.3s;
+}
+
+.sectionContact form .formGroup label:hover {
+    cursor: text;
+}
+
+.sectionContact form .formGroup :is(:is(input,textarea):focus, :is(input,textarea):not(:placeholder-shown)) + label {
+    top: 0.5rem;
+    left: 0;
+}
+
+.sectionContact form .formGroup :is(input,textarea) {
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    width: 25vw;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    resize: none;
+}
+
+.sectionContact form input[type="submit"] {
+    width: 100%;
+    height: 2rem;
+    border: none;
+    text-align: center;
+    font-family: Sora, sans-serif;
+    text-transform: uppercase;
+    background-color: #d6ffa8;
+    background-size: 100%;
+    clip-path: url('data:image/svg+xml,M0 3C0 1.34315 1.34315 0 3 0H464.5C466.157 0 467.5 1.34315 467.5 3V14.1953C467.5 15.0275 467.154 15.8222 466.546 16.3897L451.738 30.1943C451.183 30.7121 450.451 31 449.692 31H2.99999C1.34314 31 0 29.6569 0 28V3Z');
+}
+
+.sectionContact h1 {
+    color: #102E00;
+    font-family: Sora, sans-serif;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 0 2rem;
+}
+
+.sectionContact h1 span {
+    color: #84DD1F;
+    font-family: Caveat, sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    margin-right: clamp(0.6rem, 1.06vw, 1rem);
+}
+
+.sectionContact .arrows {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    transition: 1s;
+}
+
+.sectionContact .arrows svg path {
+    fill: #C6E330;
+}
+
+.sectionContact .arrows svg:nth-of-type(1) path {
+    opacity: 0.6;
+}
+
+.sectionContact .arrows svg:nth-of-type(2) path {
+    opacity: 0.42;
+}
+
+.sectionContact .arrows svg:nth-of-type(3) path {
+    opacity: 0.2;
+}
+
+:global(.minMain) .sectionContact .arrows {
+    left: calc(100% - 40rem);
+}
+
+.sectionContact .arrows.left {
+    transform: translateX(50%);
+}

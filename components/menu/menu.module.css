@@ -1,0 +1,144 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 24rem);
+    margin: 0 12rem;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    transition: 0.2s ease-out;
+}
+
+.header a {
+    color: #000;
+}
+
+.header.sticky {
+    position: fixed;
+    padding-top: 2rem;
+    padding-right: 12rem;
+    padding-left: 12rem;
+    width: 100%;
+    margin: 0;
+}
+
+.header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .icon {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header nav, .header .names, .header .icon {
+    flex: 1;
+}
+
+.header nav ul {
+    display: flex;
+    gap: 3.125rem;
+}
+
+.dark {
+    color: #fff;
+    background-color: #171515;
+}
+
+.dark a {
+    color: #fff;
+    background-color: #171515;
+}
+
+.openedMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(23, 21, 21, 0.40);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.isOpen .openedMenuContent {
+    transform: translateX(0);
+    transition: 0.4s ease-in;
+}
+
+.isClose .openedMenuContent {
+    transform: translateX(100%);
+    transition: 0.4s ease-in;
+}
+
+.isOpen {
+    transform: translateX(0);
+}
+
+.isClose {
+    transform: translateX(100%);
+    transition-delay: 0.4s;
+}
+
+.openedMenuNoContent {
+    flex: 1;
+}
+.openedMenuContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #102E00;
+    color: #fff;
+    padding: 0 7rem 0 6rem;
+}
+
+.close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    fill: red;
+}
+
+.openedMenuContentImage {
+    width: 40%;
+    height: auto;
+}
+
+.openedMenuContent h2 {
+    font-size: 2.25rem;
+    font-weight: 600;
+    margin-top: 2.7rem;
+    margin-bottom: 1rem;
+}
+
+.openedMenuContent h2 span {
+    color: #84DD1F;
+    font-family: Caveat, serif;
+    font-size: 3.4375rem;
+}
+
+.openedMenuContent p {
+    font-size: 0.75rem;
+    font-weight: 300;
+}
+
+.openedMenuContent p a {
+    color: inherit;
+    font-weight: 500;
+    text-decoration-line: underline;
+}
+
+.openedMenuContent button {
+    margin-top: 4rem;
+}

@@ -1,0 +1,152 @@
+.globalContainer {
+    padding-top: 15rem;
+    background-color: #171515;
+    color: #fff;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+.sectionInfos {
+    padding: 5.25rem 0;
+}
+
+.sectionInfos .sectionInfosTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    line-height: 1;
+    margin-right: 5rem;
+    margin-left: 9.063rem;
+    margin-bottom: 3.8rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.65);
+    padding-left: 4rem;
+    padding-bottom: 1.5rem;
+    font-family: 'Sora', sans-serif;
+}
+
+.sectionInfos .sectionInfosTitle h1 {
+    color: #FFF;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.sectionInfos .sectionInfosTitle p {
+    color: #6B6B6B;
+    font-size: 0.938rem;
+    font-weight: 300;
+}
+
+.sectionInfosGeneral {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50%;
+    margin-right: 9.875rem;
+}
+
+.sectionInfosGeneral .item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.938rem;
+}
+
+.sectionInfosImage {
+    display: flex;
+    width: 62%;
+    justify-content: flex-end;
+    margin: 4rem 0;
+}
+
+.sectionInfosImage img {
+    width: 100%;
+    height: auto;
+}
+
+.sectionInfosSubGeneralContainer {
+    display: flex;
+    gap: clamp(2rem, 6vw, 8rem);
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.sectionInfosSubGeneral {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(2rem, 7vw, 8rem);
+    margin-left: clamp(2rem, 6vw, 8rem);
+}
+
+.sectionInfosSubGeneral .item {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    text-align: center;
+    width: 12rem;
+}
+
+.sectionInfosSubGeneral .item span {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.sectionContact {
+    width: 100%;
+    padding: 10rem 0;
+    display: flex;
+    gap: 5rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sectionContactContent {
+    max-width: 34rem;
+    padding-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.25rem;
+}
+
+.sectionContactContent p {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.sectionContactContent p span {
+    text-decoration: underline;
+}
+
+.sectionContactContent button {
+    width: fit-content;
+    padding: 1rem 1.5rem;
+    border-radius: 5rem;
+    border: 1px solid #D6FFA8;
+    color: #fff;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.sectionContactContent button:hover {
+    background-color: #D6FFA8;
+    color: #000;
+    font-weight: 700;
+}
+
+.sectionContactImage {
+    width: 47%;
+    height: auto;
+}
+
+.sectionContactImage img {
+    width: 100%;
+    height: auto;
+}
+
+.sectionSlider {
+    height: clamp(40rem, 60vw, 60rem);
+    background-color: #fff;
+}
+

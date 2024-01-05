@@ -1,0 +1,44 @@
+#tranding  {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+@media screen and (max-width: 426px) {
+    #tranding {
+        margin: 0 3rem;
+    }
+}
+#tranding .tranding-slider {
+    padding-bottom: 3rem;
+    position: relative;
+}
+
+.tranding-slide {
+    position: relative;
+    text-align: center;
+}
+
+.tranding-slide .tranding-slide-img img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 359/496 !important;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.tranding-slide .tranding-slide-content {
+    text-align: center;
+    width: 100%;
+}
+
+.tranding-slide .tranding-slide-content h2 {
+    color: #000;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Sora, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 102%;
+    text-transform: uppercase;
+}
