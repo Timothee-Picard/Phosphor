@@ -3,6 +3,11 @@ import Image from "next/image";
 import styles from "./prenom.module.css";
 import Slider from "@/components/slider/slider";
 import Menu from "@/components/menu/menu";
+import type {Metadata} from "next";
+
+export const metadata: Metadata = {
+    title: 'Phosphor | Prénom',
+}
 
 export default function TypiquementVous() {
    return (

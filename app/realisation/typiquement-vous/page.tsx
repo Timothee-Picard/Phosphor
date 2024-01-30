@@ -3,6 +3,11 @@ import Image from "next/image";
 import styles from "./typiquement-vous.module.css";
 import Slider from "@/components/slider/slider";
 import Menu from "@/components/menu/menu";
+import type {Metadata} from "next";
+
+export const metadata: Metadata = {
+    title: 'Phosphor | Typiquement vous',
+}
 
 export default function TypiquementVous() {
    return (

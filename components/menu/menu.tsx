@@ -55,7 +55,7 @@ export default function Menu(props: MenuProps){
         // <header className={`${styles.header} ${(scrollVertical > 50) ? styles.sticky : ""}`}>
         <header className={`${styles.header} ${(theme === "dark")? styles.dark : ""}`}>
              <div className={styles.names}>
-                 <p><b>Enzo</b> Enzo</p>
+                 <p><b>Derny</b> Enzo</p>
                  <p><b>Picard</b> Timothée</p>
              </div>
             <nav>
